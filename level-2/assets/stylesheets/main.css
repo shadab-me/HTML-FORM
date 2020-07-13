@@ -1,0 +1,511 @@
+ 
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ====================================
+    Globals
+===================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 16px/1.5 'Open Sans', sans-serif;
+    background-color: hsl(0,0%,90%);
+    color: #060606;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.col {
+    flex: 0 1 100%;
+    margin-bottom: 10px;
+}
+
+.col-1-2 {
+    flex: 0 1 50%;
+}
+
+.col-1-3 {
+    flex: 0 1 30%;
+}
+
+.col-30 {
+    flex: 0 1 30%;
+}
+
+.col-1-4 {
+    flex: 0 1 25%;
+}
+
+.p-20 {
+    padding: 20px 0;
+}
+
+/* ====================================
+    Typography
+===================================== */
+h1,
+h3 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 20px;
+    color: #fff;
+}
+
+p {
+    color: rgba(29, 28, 28, 0.856);
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* ====================================
+    Links
+===================================== */
+
+a {
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: #060606;
+}
+
+.active {
+    color: hsl(172,45%,60%);
+}
+
+/* ====================================
+    buttons
+===================================== */
+
+.btn {
+    display: inline-block;
+    background-color: hsl(172,45%,59%);
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: hsl(172,45%,59%);
+}
+
+.btn-pink {
+    background-color: #fff;
+    color: hsl(332,45%,59%);
+}
+
+/* ====================================
+    Header
+===================================== */
+
+header {
+    background-color: #fff;
+    color: #060606;
+}
+
+.logo-text {
+    margin-left: 10px;
+}
+
+.nav-item {
+    margin-left: 25px;
+}
+
+/* ====================================
+    Main
+===================================== */
+
+.user-search {
+    padding: 50px 0;
+    color: #fff;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../images/banner.jpg) no-repeat;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text * {
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    text-transform: uppercase;
+}
+
+.hero-text i {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: hsl(172,45%,59%);
+    color: #fff;
+    padding: 20px;
+}
+
+.user-search-form form {
+    width: 1000px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #fff;
+    color: #000;
+}
+
+#destination {
+    display: block;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    font: inherit;
+    display: block;
+    padding: 12px;
+    border-radius: 2.5px;
+    border: none;
+}
+
+input[type="number"] {
+    width: 80px;
+}
+
+#rooms {
+    width: 180px;
+}
+
+.form-btn {
+    width: 100%;
+    background-color: hsl(172,45%,59%);
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.feature {
+    background-color: hsl(0,0%,94%);
+}
+
+.center {
+    text-align: center;
+}
+
+.contain,
+.contain-hotels {
+    width: 1000px;
+    margin: 0 auto 20px;
+} 
+
+.contain * {
+    margin: 0 0 20px;
+}
+
+.feature-destination {
+    background-color: #fff;
+}
+
+.destination {
+    position: relative;
+}
+
+.feature-destination img {
+    width: 100%;
+    height: 100%;
+}
+
+.europe,
+.asia,
+.america {
+    position: absolute;
+    width: 800px;
+    top: 100px;
+    left: 410px;
+}
+
+.asia {
+    left: 40px;
+}
+
+.arrow {
+    display: inline-block;
+    background-color: rgb(24 24 23 / 51%);
+    padding: 20px;
+}
+
+.margin-left {
+    margin-left: 8px;
+}
+
+.arrow i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.destination-info-green {
+    padding: 15px 50px;
+    background-color: hsl(172,45%,59%);
+    color: #fff;
+}
+
+.pink {
+    background-color: hsl(332,45%,59%);
+}
+
+.destination-info-green h3 {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.destination-info-green p {
+    color: #fff;
+}
+
+.destination-info-green * {
+    margin-bottom: 15px;
+}
+
+.country {
+    background-color: hsl(172,45%,59%);
+    flex: 1 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.pink-bg {
+    background-color: hsl(332,45%,59%);
+}
+
+.green-bg {
+    background-color: hsl(172,45%,59%);
+}
+
+.hotels {
+    background-color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.hotel {
+    background-color: #fff;
+    box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.hotel img,
+.button-curve img {
+    width: 100%;
+    height: 100%;
+}
+
+.hotel-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.hotel-info * {
+    margin-bottom: 5px;
+}
+
+.hotel-info h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(43, 41, 41, 1);
+}
+
+.country-tag {
+    display: inline-block;
+    font-size: 12px;
+    color: hsl(332,45%,59%);
+    font-weight: 600;
+}
+
+.hotel-info p {
+    font-size: 14px;
+    color: #080808;
+}
+
+.price {
+    padding: 20px;
+    align-self: center;
+    text-align: center;
+    color: #fff;
+}
+
+.price a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.reach-us {
+    position: relative;
+}
+
+.map iframe {
+    display: block;
+    width: 100%;
+    height: 600px;
+}
+
+.contact-form {
+    background-color: #fff;
+    position: absolute;
+    top: 90px;
+    right: 60px;
+    width: 600px;
+    padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font: inherit;
+    font-weight: 600;
+    display: inline-block;
+    width: 48%;
+    background-color: hsl(0,0%,96%);
+    padding: 18px;
+    margin: 12px 0;
+    border: none;
+}
+
+.contact-form input[name="subject"] {
+    width: 100%;
+}
+
+.contact-form textarea {
+    width: 100%;
+}
+
+.contact-form button {
+    width: 100%;
+    text-align: center;
+}
+
+/* ====================================
+    Footer
+===================================== */
+
+footer {
+    background-color: hsl(172,45%,59%);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}

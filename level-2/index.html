@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Level 2</title>
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    
+    <header class="p-20">
+        <div class="container flex justify-space-around align-center">
+            <a href="" class="logo flex align-center">
+                <img src="./assets/images/logo.png" alt="logo">
+                <h3 class="logo-text">Journey</h3>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-items flex">
+                    <li class="nav-item"><a href="#" class="active">Home</a></li>
+                    <li class="nav-item"><a href="#">Top Destination</a></li>
+                    <li class="nav-item"><a href="#">Recommended Places</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="container user-search">
+                <div class="hero-text">
+                    <h1>Let's Begin</h1>
+                    <img src="./assets/images/dots-3.png" alt="dots">
+                    <h4>We assist yoou to choose the best.</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="user-search-form">
+                    <form action="#" class="flex form justify-space-between">
+                        <div class="col-1-2">
+                            <div class="col">
+                                <label for="destination">Choose Your Destination</label>
+                                <input type="text" id="destination" placeholder="Type your destination...">
+                            </div>
+                            <div class="col flex justify-space-between">
+                                <div class="col-1-2 check-in">
+                                    <label for="check-in">Check In</label>
+                                    <input type="text" id="check-in" placeholder="Check In">
+                                </div>
+                                <div class="col-1-2 check-out">
+                                    <label for="check-out">Check Out</label>
+                                    <input type="text" id="check-out" placeholder="Check Out">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1-2">
+                            <div class="col flex justify-space-between">
+                                <div class="col-1-3">
+                                    <label for="rooms">How many rooms?</label>
+                                    <input type="number" name="rooms" id="rooms" placeholder="1 Room" min="1" max="10">
+                                </div>
+                                <div class="col-1-3">
+                                    <label for="adult">Adult</label>
+                                    <input type="number" name="adult" id="adult" placeholder="1" min="1" max="20">
+                                </div>
+                                <div class="col-1-3">
+                                    <label for="children">Children</label>
+                                    <input type="number" name="children" id="children" placeholder="0" min="0" max="10">
+                                </div>
+                                <button class="form-btn">Check Availability</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container feature">
+                <div class="contain center p-20">
+                    <h2>Your <strong>Journey</strong> is our priority</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci aliquam maiores obcaecati excepturi odit sit optio? Porro, atque ipsum assumenda doloribus quo maiores quas minima corrupti inventore autem omnis nam.</p>
+                    <a href="#" class="btn">Continue Explore</a>
+                </div>
+
+                <div class="feature-destination">
+
+                    <div class="destination flex justify-space-between">
+                        <div class="col-1-2">
+                            <img src="./assets/images/tm-img-01.jpg" alt="Europe">
+                        </div>
+                        <div class="col-1-2">
+                            <div class="europe flex align-center no-wrap">
+                                <a href="#" class="arrow"><i class="fas fa-chevron-circle-left"></i></a>
+                                <a href="#" class="arrow margin-left"><i class="fas fa-chevron-circle-right"></i></a>
+                                <div class="destination-info-green">
+                                    <h3>Europe's most visited places</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, itaque harum! Commodi quidem, quaerat nulla est
+                                    praesentium architecto voluptatum impedit.</p>
+                                    <a href="#" class="btn btn-white">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destination flex justify-space-between">
+                        <div class="col-1-2">
+                            <div class="asia flex align-center no-wrap">
+                                <div class="destination-info-green pink">
+                                    <h3>Asia's most popular places</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Repellendus, itaque harum! Commodi quidem, quaerat nulla est
+                                    praesentium architecto voluptatum impedit.</p>
+                                    <a href="#" class="btn btn-pink">Continue Reading</a>
+                                </div>
+                                <a href="#" class="arrow"><i class="fas fa-chevron-circle-left"></i></a>
+                                <a href="#" class="arrow margin-left"><i class="fas fa-chevron-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-1-2">
+                            <img src="./assets/images/tm-img-02.jpg" alt="Europe">
+                        </div>
+                    </div>
+
+                    <div class="destination flex justify-space-between">
+                        <div class="col-1-2">
+                            <img src="./assets/images/tm-img-03.jpg" alt="Europe">
+                        </div>
+                        <div class="col-1-2">
+                            <div class="america flex align-center no-wrap">
+                                <a href="#" class="arrow"><i class="fas fa-chevron-circle-left"></i></a>
+                                <a href="#" class="arrow margin-left"><i class="fas fa-chevron-circle-right"></i></a>
+                                <div class="destination-info-green">
+                                    <h3>America's most famous places</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, itaque harum! Commodi quidem, quaerat nulla est praesentium architecto voluptatum impedit.</p>
+                                    <a href="#" class="btn btn-white">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="countries">
+            <div class="container flex no-warp">
+                <div class="country">
+                    <img src="./assets/images/north-america.png" alt="north-america">
+                    <h5>North America</h5>
+                </div>
+                <div class="country">
+                    <img src="./assets/images/south-america.png" alt="south-america">
+                    <h5>South America</h5>
+                </div>
+                <div class="country">
+                    <img src="./assets/images/europe.png" alt="europe">
+                    <h5>Europe</h5>
+                </div>
+                <div class="country pink-bg">
+                    <img src="./assets/images/asia.png" alt="asia">
+                    <h5>Asia</h5>
+                </div>
+                <div class="country">
+                    <img src="./assets/images/africa.png" alt="africa">
+                    <h5>Africa</h5>
+                </div>
+                <div class="country">
+                    <img src="./assets/images/australia.png" alt="australia">
+                    <h5>Australia</h5>
+                </div>
+                <div class="country">
+                    <img src="./assets/images/antartica.png" alt="antartica">
+                    <h5>Antartica</h5>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container hotels">
+                <div class="contain-hotels">
+                    <div class="hotel flex">
+                        <div class="hotel-img col-1-4">
+                            <img src="./assets/images/tm-img-06.jpg" alt="hotel">
+                        </div>
+                        <div class="hotel-info col-1-2">
+                            <h4>Asia resort hotel</h4>
+                            <address class="country-tag">Singapore</address>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi temporibus maxime quas tenetur modi.</p>
+                        </div>
+                        <div class="col-1-4 green-bg flex">
+                            <div class="button-curve">
+                                <img src="./assets/images/button-curve.png" alt="button-curve">
+                            </div>
+                            <div class="price">
+                                <h3>&dollar;440</h3>
+                                <a href="#">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hotel flex">
+                        <div class="hotel-img col-1-4">
+                            <img src="./assets/images/tm-img-07.jpg" alt="hotel">
+                        </div>
+                        <div class="hotel-info col-1-2">
+                            <h4>Nullam eget est a nisl</h4>
+                            <address class="country-tag">Yangon, Myanmar</address>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi temporibus maxime quas tenetur modi.</p>
+                        </div>
+                        <div class="col-1-4 green-bg flex">
+                            <div class="button-curve">
+                                <img src="./assets/images/button-curve.png" alt="button-curve">
+                            </div>
+                            <div class="price">
+                                <h3>&dollar;450</h3>
+                                <a href="#">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotel flex">
+                        <div class="hotel-img col-1-4">
+                            <img src="./assets/images/tm-img-05.jpg" alt="hotel">
+                        </div>
+                        <div class="hotel-info col-1-2">
+                            <h4>proin interdum ullamcorper</h4>
+                            <address class="country-tag">Bangkok, Thailand</address>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi temporibus maxime quas tenetur modi.</p>
+                        </div>
+                        <div class="col-1-4 green-bg flex">
+                            <div class="button-curve">
+                                <img src="./assets/images/button-curve.png" alt="button-curve">
+                            </div>
+                            <div class="price">
+                                <h3>&dollar;460</h3>
+                                <a href="#">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotel flex">
+                        <div class="hotel-img col-1-4">
+                            <img src="./assets/images/tm-img-04.jpg" alt="hotel">
+                        </div>
+                        <div class="hotel-info col-1-2">
+                            <h4>lorem ipsum dolor sit</h4>
+                            <address class="country-tag">Vientiane, Laos</address>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi temporibus maxime quas tenetur modi.</p>
+                        </div>
+                        <div class="col-1-4 green-bg flex">
+                            <div class="button-curve">
+                                <img src="./assets/images/button-curve.png" alt="button-curve">
+                            </div>
+                            <div class="price">
+                                <h3>&dollar;470</h3>
+                                <a href="#">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#" class="btn">Show More Places</a>
+            </div>
+        </section>
+
+        <section class="reach-us">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.919515571297!2d76.3514099145402!3d32.206399320168615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1593923715293!5m2!1sen!2sin"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <form action="#" class="contact-form flex justify-space-between">
+                <input type="text" placeholder="Name" name="name">
+                <input type="email" placeholder="Email" name="email">
+                <input type="text" placeholder="Subject" name="subject">
+                <textarea name="message" placeholder="Message" rows="5"></textarea>
+                <button class="btn">Send Message Now</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <small>Copyright &copy; 2020 Your Company. Designed By Template.mo</small>
+    </footer>
+</body>
+</html>
